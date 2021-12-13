@@ -1,0 +1,4 @@
+button>*,
+.cl-action>* {
+    pointer-events: none;
+}
