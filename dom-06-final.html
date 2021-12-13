@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My DOM</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="./css/main-06-final.css" />
+        <script type="module" src="./js/main-06-final.js"> </script>
+    </head>
+    <body>
+        <template id="tmp-input">
+            <div class="cmp-input-container">
+                <label>
+                    <b>Number <span class="cmp-input-no cl-number"></span></b>
+                    <input type="number" value="0" required />
+                </label>
+                <button type="button" class="cmd-delete-input">
+                    <i class="material-icons">
+                        delete_forever
+                    </i>
+                </button>
+            </div>
+        </template>
+
+        <section class="cmp-section-container">
+            <button type="button" class="cmd-add-input">
+                <i class="material-icons">
+                    add
+                </i>
+            </button>
+            <div class="cmp-inputs-container"></div>
+            <div class="cmp-input-container">
+                <label>
+                    <b>Result</b>
+                    <output class="cmp-result cl-number">0</output>
+                </label>
+                <span class="cl-dummy"></span>
+            </div>
+        </section>
+    </body>
+</html>

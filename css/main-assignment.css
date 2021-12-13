@@ -1,0 +1,142 @@
+html {
+    font-family: sans-serif;
+
+    overflow-y: scroll;
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+button,
+.cl-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+button>*,
+.cl-action>* {
+    pointer-events: none;
+}
+
+input[type="number"],
+.cl-number {
+    font-family: monospace;
+    font-size: 1.25em;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.cl-primary:enabled {
+    color: rgb(0, 0, 255);
+}
+
+.cl-warn:enabled {
+    color: rgb(255, 0, 0)
+}
+
+.cmp-float {
+    z-index: 9999;
+    position: fixed;
+
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+
+    overflow: visible;
+}
+
+.cmp-float>* {
+    position: absolute;
+}
+
+.cmp-float>.cmd-add-section {
+    top: 8px;
+    left: 8px;
+}
+
+.cmp-section-container {
+    margin: auto;
+    width: 400px;
+}
+
+.cmp-section-container>:last-child {
+    padding-bottom: 24px;
+}
+
+.cmp-section-container header {
+    display: grid;
+    grid-template-columns: 0fr 1fr 0fr;
+    align-items: center;
+
+    position: sticky;
+    top: 0px;
+
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.cmp-section-container header .cmp-section-title {
+    margin-left: 1em;
+}
+
+.cmp-section-container .cmp-inputs-container {
+    margin-top: 8px;
+}
+
+.cmp-input-container,
+.cmp-input-container>label {
+    display: grid;
+    justify-content: center;
+}
+
+.cl-dummy {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.cmp-input-container {
+    grid-template-columns: 1fr 5ch;
+}
+
+.cmp-input-container>label {
+    grid-template-columns: 15ch 1fr;
+    white-space: nowrap;
+}
+
+.cmp-input-container>label>b {
+    align-self: center;
+    text-align: right;
+}
+
+.cmp-input-container>label>b::after {
+    content: '::';
+    margin-left: 0.5ch;
+    margin-right: 0.5ch;
+    font-weight: bold;
+    color: blue;
+}
+
+.cmp-result-container {
+    padding-top: 0.5em;
+}
+
+.cmp-result {
+    padding-right: 2ch;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.cmp-section-no,
+.cmp-input-no {
+    display: inline-block;
+    width: 2ch;
+}
